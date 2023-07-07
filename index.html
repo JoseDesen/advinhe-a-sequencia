@@ -21,6 +21,7 @@
 			var sequenciaJogador=[];
 			var tempo=0;
 			var meuInterval;
+			var velocidade="normal"
 			cont_level=0;
 			function comecar(){
 				document.f.iniciar.disabled=true;
@@ -32,7 +33,10 @@
 				
 				var cont=0;
 				meuInterval = setInterval(function(){
-					tempo++;
+					if(velocidade=="normal"){
+					tempo=1
+					tempo=tempo+2;
+					}
 					if(tempo==1){
 						if(sequencia[0]==1){
 							document.getElementById('q1').style.background="red";
