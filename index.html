@@ -23,6 +23,7 @@
 			var meuInterval;
 			cont_level=0;
 			function comecar(){
+				document.f.iniciar.disabled=true;
 				cont_level=cont_level+1;
 				div_level=document.getElementById('level');
 				div_level.innerHTML="<h1 id='level'>nivel "+cont_level+"</h1>";
@@ -661,7 +662,7 @@
 				<br>
 				<br>
 				<br>
-			<input type="button"  value="começar" onclick="comecar()" style="width:900px;font-size:200px;">
+			<input type="button" name="iniciar" value="começar" onclick="comecar()" style="width:900px;font-size:200px;">
 		</form>
 	</body>
 </html>
