@@ -30,13 +30,9 @@
 				div_level.innerHTML="<h1 id='level'>nivel "+cont_level+"</h1>";
 				var a=Math.floor(Math.random() * 4)+1;
 				sequencia[sequencia.length]=a;
-				
 				var cont=0;
 				meuInterval = setInterval(function(){
-					if(velocidade=="normal"){
-					tempo=1
-					tempo=tempo+2;
-					}
+					tempo++;
 					if(tempo==1){
 						if(sequencia[0]==1){
 							document.getElementById('q1').style.background="red";
